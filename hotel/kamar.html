@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kamar - FaveHotel Nagoya</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            /* Styling for Back to Home Button */
+        .back-home-btn {
+            display: inline-block;
+            background-color: #6a0dad;
+            color: white;
+            padding: 5px 5px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 0;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+        .back-home-btn:hover {
+            background-color: #9932CC;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .konten {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .room-section {
+            padding: 0 2px;
+        }
+
+        .room-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 100%;
+            border: none;
+            outline: none;
+        }
+
+        .room-card {
+            flex: 1 1 calc(28%);
+            background: #fefefe;
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .room-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .room-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .room-card-content {
+            padding: 15px;
+        }
+
+        .room-card-content h3 {
+            margin: 0;
+            color: #6a0dad;
+        }
+
+        .room-card-content p {
+            font-size: 15px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .room-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">FaveHotel Nagoya</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="kamar.html">Kamar</a></li>
+            <li><a href="meeting&event.html">Meeting & Event</a></li>
+            <li><a href="lokasi.html">Lokasi</a></li>
+            <li><a href="tentang-saya.html">Profil Programer</a></li>
+        </ul>
+    </nav>
+
+    <article class="room-section">
+        <article class="room-section">
+    <h2 class="konten judul">Pilih Kamar Terbaik untuk Anda</h2>
+    <p style="margin-bottom: 30px;">Kami menyediakan berbagai tipe kamar yang nyaman, modern, dan cocok untuk segala kebutuhan Anda.</p>
+
+    <div class="room-grid">
+
+        <!-- Room 1 -->
+        <div class="room-card">
+            <img src="img/standart-room.jpeg" alt="Standard Room">
+            <div class="room-card-content">
+                <h3>Standard Room</h3>
+                <p>Kamar minimalis dengan tempat tidur queen, AC, Wi-Fi, dan kamar mandi dalam.</p>
+                <div class="room-price">Rp 450.000 / malam</div>
+                <a href= "book-now.html"class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Room 2 -->
+        <div class="room-card">
+            <img src="img/superior-room.jpeg" alt="Superior Room">
+            <div class="room-card-content">
+                <h3>Superior Room</h3>
+                <p>Lebih luas dengan minibar, sofa, dan pemandangan kota. Ideal untuk keluarga atau masa inap lebih lama.</p>
+                <div class="room-price">Rp 600.000 / malam</div>
+                <a href= "book-now.html"class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Room 3 -->
+        <div class="room-card">
+            <img src="img/deluxe-room.jpeg" alt="Deluxe Room">
+            <div class="room-card-content">
+                <h3>Deluxe Room</h3>
+                <p>Dilengkapi bathtub, area kerja, dan layanan kamar 24 jam. Pilihan terbaik untuk kenyamanan penuh.</p>
+                <div class="room-price">Rp 750.000 / malam</div>
+                <a href= "book-now.html"class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</article>
+    </article>
+<div class="konten">
+    <a href="index.html" class="back-home-btn">Kembali ke Halaman Utama</a>
+</div>
+    <footer>
+        Vera Farida - 2025 Teknik Informatika
+    </footer>
+</div>
+</body>
+</html>

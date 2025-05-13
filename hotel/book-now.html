@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Now - FaveHotel Nagoya</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">FaveHotel Nagoya</div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kamar.html">Kamar</a></li>
+                <li><a href="meeting&event.html">Meeting & Event</a></li>
+                <li><a href="lokasi.html">Lokasi</a></li>
+                <li><a href="tentang-saya.html">Profil Programer</a></li>
+            </ul>
+        </nav>
+
+        <div class="konten">
+            <h2>Book Now</h2>
+            <form class="booking-form" action="submit-booking.html" method="post">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="room-type">Tipe</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="Standard Room">Standard Room</option>
+                    <option value="Superior Room">Superior Room</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Bussines meeting">Bussines Meeting</option>
+                    <option value="Seminar & Workshop">Seminar & workshop</option>
+                    <option value="Private Event">Private Event</option>
+                </select>
+
+                <label for="check-in">Tanggal Check-In:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Tanggal Check-Out:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <button type="submit" class="book-now-btn">Pesan Sekarang</button>
+            </form>
+
+            <a href="index.html" class="back-home-btn">Kembali ke Halaman Utama</a>
+        </div>
+
+        <footer>
+            Vera Farida - 2025 Teknik Informatika
+        </footer>
+    </div>
+</body>
+</html>
